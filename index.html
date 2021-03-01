@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <title>Slick Slider</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider">
+        <div class="slider-item"><img src="images/slide1.jpg" /></div>
+        <div class="slider-item"><img src="images/slide2.jpg" /></div>
+        <div class="slider-item"><img src="images/slide1.jpg" /></div>
+        <div class="slider-item"><img src="images/slide2.jpg" /></div>
+        <div class="slider-item"><img src="images/slide1.jpg" /></div>
+        <div class="slider-item"><img src="images/slide2.jpg" /></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="testimonial-slider">
+        <div class="testimonial-item">
+          <img src="images/slide1.jpg" />
+        </div>
+        <div class="testimonial-item">
+          <img src="images/slide2.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+      $(".slider").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        infinit: true,
+        autoplay: true,
+      });
+
+      $(".testimonial-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+    </script>
+  </body>
+</html>
